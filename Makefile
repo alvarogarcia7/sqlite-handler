@@ -7,7 +7,7 @@ backup.sql:
 .PHONY: backup.sql
 
 backup: backup.sql
-	cp backup.sql data/
+	mv backup.sql data/
 	cd data/ && git commit -am "Save"
 
 load: db.sqlite3
