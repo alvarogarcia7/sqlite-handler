@@ -1,0 +1,10 @@
+/target
+
+## Data
+data/
+db.sqlite3
+
+## Jetbrains
+.idea/
+*.iml
+
