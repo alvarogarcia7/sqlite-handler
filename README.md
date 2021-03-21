@@ -9,3 +9,16 @@ I use a graphical DB editor, to edit the database.
   * Data: it should not live here. This is a generic handler
   * Validation: if it can live in the DB schema, it does not belong here. If it does not fit into a DB schema, it does not belong here either
 
+### Usage
+
+To load a database (from its backup):
+
+```bash
+make load
+```
+
+To dump a database (from its .sqlite3 representation)
+
+```bash
+make backup
+```
