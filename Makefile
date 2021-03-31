@@ -8,7 +8,8 @@ data/backup.sql:
 .PHONY: data/backup.sql
 
 last-element:
-	cat data/backup.sql|grep INSERT | tail -2
+	cat data/backup.sql|grep INSERT | tail -2 | less
+	cd data && git log -n1 -p
 .PHONY: last-element
 
 backup: data/backup.sql
